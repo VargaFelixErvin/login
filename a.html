@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bejelentkezés a webhelyre 💻</title>
+    <style>
+        .body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg);
+        }
+        .gomb {
+            background-color:rgba(231, 29, 204, 0.479);
+            border: 0px;
+            width: 300px;
+            height: 50px;
+            border-radius: 12px;
+            display: inline-block;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .b {
+            font-family: sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .jelszo {
+            display: block;
+            margin: auto;
+            width: 280px;
+            margin-top: 20px;
+            border-radius: 12px;
+            height: 50px;
+            padding-left: 10px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        .felhasznalonev{
+            display: block;
+            margin: auto;
+            width: 280px;
+            margin-top: 50px;
+            border-radius: 12px;
+            height: 50px;
+            padding-left: 10px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        ::placeholder {
+            text-align: center;
+        }
+        .fejléc{
+            text-align: center;
+            font-family: sans-serif;
+            color: white;
+        }
+        .keret{
+            border-style: solid;
+            border-width: 3px;
+            border-color: rgba(0, 0, 0, 0.363);
+            border-radius: 12px;
+            padding: 30px;
+            padding-bottom: 70px;
+            text-align: center;
+            margin: auto;
+            width: fit-content;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        function jelszo() {
+        var jelszo = document.getElementById("j");
+        var beirtjelszo = jelszo.value;
+        if (beirtjelszo === "valami1230"){
+            return true;
+        }
+        else {
+            alert('Hibás felhasználónév vagy jelszó!')
+            return false;
+        }
+        }
+    </script>
+</head>
+<body class="body">
+    <div class="keret">
+    <p class="b">
+        <h1 class="fejléc">Bejelentkezés</h1>
+        <input class="felhasznalonev" type="text" placeholder="Felhasználónév"/>
+        <input class="jelszo"id="j" type="password" placeholder="Jelszó"/>
+    </p>
+    <a href="b.html"><input class="gomb" type="button" value="Bejelntkezés" onclick="return jelszo();"></a>
+    </div>
+</body>
+</html>
